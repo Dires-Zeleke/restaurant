@@ -39,7 +39,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.get('/*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
